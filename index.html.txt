@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 21st Birthday Yutika ❤️</title>
+
+<style>
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: "Poppins", Arial, sans-serif;
+background: #08030a;
+color: white;
+overflow-x: hidden;
+}
+
+/* ================= BACKGROUND ================= */
+
+body::before {
+content: "";
+position: fixed;
+inset: 0;
+z-index: -3;
+background:
+radial-gradient(circle at 15% 20%, rgba(255, 55, 125, .20), transparent 30%),
+radial-gradient(circle at 85% 80%, rgba(145, 45, 255, .18), transparent 30%),
+linear-gradient(135deg, #08030a, #190611, #08030d);
+}
+
+.stars {
+position: fixed;
+inset: 0;
+z-index: -2;
+pointer-events: none;
+background-image:
+radial-gradient(#fff 1px, transparent 1px),
+radial-gradient(rgba(255,255,255,.7) 1px, transparent 1px);
+background-size: 80px 80px, 120px 120px;
+background-position: 0 0, 40px 60px;
+opacity: .25;
+}
+
+/* ================= MUSIC BUTTON ================= */
+
+.music-btn {
+position: fixed;
+top: 20px;
+right: 20px;
+z-index: 1000;
+
+width: 52px;
+height: 52px;
+
+border-radius: 50%;
+border: 1px solid rgba(255,255,255,.2);
+
+background: rgba(20,5,15,.75);
+color: white;
+
+font-size: 21px;
+cursor: pointer;
+
+backdrop-filter: blur(12px);
+transition: .3s;
+}
+
+.music-btn:hover {
+transform: scale(1.1);
+background: rgba(255,80,140,.25);
+}
+
+/* ================= HERO ================= */
+
+.hero {
+min-height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+text-align: center;
+padding: 25px;
+}
+
+.hero-content {
+max-width: 900px;
+animation: fadeUp 1.5s ease;
+}
+
+.eyebrow {
+color: #ff9fc2;
+letter-spacing: 5px;
+font-size: 13px;
+text-transform: uppercase;
+margin-bottom: 25px;
+}
+
+.hero h1 {
+font-family: Georgia, serif;
+font-size: clamp(50px, 10vw, 105px);
+line-height: .95;
+
+background: linear-gradient(
+90deg,
+#ffffff,
+#ff9fc4,
+#ffffff,
+#ff77a9
+);
+
+background-size: 300%;
+
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+
+animation: shine 6s linear infinite;
+}
+
+.hero h2 {
+margin-top: 25px;
+
+font-family: Georgia, serif;
+font-weight: normal;
+
+font-size: clamp(23px, 4vw, 38px);
+
+color: #ffe0ea;
+}
+
+.hero-date {
+margin-top: 20px;
+color: #aa929e;
+}
+
+.open-btn {
+display: inline-block;
+
+margin-top: 45px;
+
+padding: 15px 32px;
+
+border-radius: 50px;
+
+color: white;
+text-decoration: none;
+
+background: rgba(255,255,255,.07);
+border: 1px solid rgba(255,255,255,.2);
+
+backdrop-filter: blur(10px);
+
+transition: .3s;
+}
+
+.open-btn:hover {
+transform: translateY(-5px);
+background: rgba(255,90,150,.2);
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+width: min(1050px, 92%);
+margin: auto;
+padding: 110px 0;
+}
+
+.section-heading {
+text-align: center;
+margin-bottom: 50px;
+}
+
+.section-heading span {
+color: #ff83ae;
+letter-spacing: 4px;
+text-transform: uppercase;
+font-size: 12px;
+}
+
+.section-heading h2 {
+margin-top: 12px;
+
+font-family: Georgia, serif;
+font-size: clamp(36px, 6vw, 60px);
+}
+
+/* ================= GLASS CARD ================= */
+
+.glass {
+padding: clamp(28px, 6vw, 60px);
+
+border-radius: 30px;
+
+background: rgba(255,255,255,.055);
+border: 1px solid rgba(255,255,255,.10);
+
+backdrop-filter: blur(18px);
+
+box-shadow:
+0 30px 100px rgba(0,0,0,.35);
+}
+
+/* ================= MESSAGE ================= */
+
+.message p {
+color: #e7dce1;
+
+font-size: 17px;
+line-height: 1.95;
+
+margin-bottom: 25px;
+}
+
+.message .opening {
+font-family: Georgia, serif;
+font-size: 28px;
+color: #ffb2cb;
+}
+
+/* ================= LOVE CARDS ================= */
+
+.love-grid {
+display: grid;
+
+grid-template-columns: repeat(2, 1fr);
+
+gap: 18px;
+}
+
+.love-card {
+padding: 32px;
+
+border-radius: 25px;
+
+background: rgba(255,255,255,.045);
+border: 1px solid rgba(255,255,255,.08);
+
+transition: .4s;
+}
+
+.love-card:hover {
+transform: translateY(-8px);
+
+background: rgba(255,80,140,.08);
+
+border-color: rgba(255,150,190,.3);
+}
+
+.love-number {
+font-size: 32px;
+margin-bottom: 17px;
+}
+
+.love-card p {
+color: #ddd0d6;
+line-height: 1.8;
+}
+
+/* ================= OUR STORY ================= */
+
+.story {
+text-align: center;
+}
+
+.story-text {
+font-family: Georgia, serif;
+
+font-size: clamp(23px, 4vw, 36px);
+
+line-height: 1.7;
+
+color: #f3dce6;
+}
+
+/* ================= LIFE PARTNER ================= */
+
+.partner p {
+color: #e4d6dc;
+
+font-size: 17px;
+
+line-height: 2;
+
+margin-bottom: 25px;
+}
+
+.partner .special {
+color: #ffabc7;
+
+font-family: Georgia, serif;
+
+font-size: clamp(22px, 4vw, 29px);
+}
+
+/* ================= DREAMS ================= */
+
+.dream-grid {
+display: grid;
+
+grid-template-columns: repeat(4, 1fr);
+
+gap: 15px;
+}
+
+.dream {
+min-height: 190px;
+
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+
+text-align: center;
+
+padding: 25px;
+
+border-radius: 25px;
+
+background: rgba(255,255,255,.05);
+
+border: 1px solid rgba(255,255,255,.08);
+
+transition: .4s;
+}
+
+.dream:hover {
+transform: translateY(-8px) scale(1.02);
+
+background: rgba(255,90,150,.08);
+}
+
+.dream-icon {
+font-size: 42px;
+margin-bottom: 18px;
+}
+
+.dream p {
+color: #ded1d7;
+line-height: 1.6;
+}
+
+/* ================= FINAL ================= */
+
+.final {
+min-height: 90vh;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+text-align: center;
+}
+
+.final-content {
+max-width: 800px;
+}
+
+.big-heart {
+font-size: 85px;
+
+display: inline-block;
+
+animation: heartbeat 1.5s infinite;
+}
+
+.final h2 {
+margin: 25px 0;
+
+font-family: Georgia, serif;
+
+font-size: clamp(42px, 8vw, 75px);
+
+background: linear-gradient(
+90deg,
+#fff,
+#ff9fc4,
+#fff
+);
+
+-webkit-background-clip: text;
+background-clip: text;
+color: transparent;
+}
+
+.final p {
+color: #cdbec6;
+
+font-size: 17px;
+
+line-height: 1.8;
+}
+
+.signature {
+margin-top: 40px;
+
+font-family: Georgia, serif;
+
+color: #ff9fc3;
+
+font-size: 30px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+text-align: center;
+
+padding: 40px 20px;
+
+color: #71626a;
+
+font-size: 13px;
+}
+
+/* ================= FLOATING HEARTS ================= */
+
+.floating-heart {
+position: fixed;
+
+bottom: -30px;
+
+pointer-events: none;
+
+z-index: 50;
+
+animation: floatHeart linear forwards;
+}
+
+@keyframes floatHeart {
+0% {
+transform: translateY(0) scale(.6) rotate(0);
+opacity: 0;
+}
+
+15% {
+opacity: .8;
+}
+
+100% {
+transform:
+translateY(-110vh)
+scale(1.4)
+rotate(30deg);
+
+opacity: 0;
+}
+}
+
+/* ================= CONFETTI ================= */
+
+.confetti {
+position: fixed;
+
+top: -20px;
+
+width: 8px;
+height: 14px;
+
+z-index: 2000;
+
+pointer-events: none;
+
+animation: confettiFall 3.5s linear forwards;
+}
+
+@keyframes confettiFall {
+to {
+transform:
+translateY(110vh)
+rotate(720deg);
+
+opacity: 0;
+}
+}
+
+/* ================= ANIMATIONS ================= */
+
+@keyframes shine {
+0% {
+background-position: 0%;
+}
+
+100% {
+background-position: 300%;
+}
+}
+
+@keyframes heartbeat {
+0%, 100% {
+transform: scale(1);
+}
+
+50% {
+transform: scale(1.18);
+}
+}
+
+@keyframes fadeUp {
+from {
+opacity: 0;
+transform: translateY(35px);
+}
+
+to {
+opacity: 1;
+transform: translateY(0);
+}
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 700px) {
+
+section {
+padding: 80px 0;
+}
+
+.love-grid {
+grid-template-columns: 1fr;
+}
+
+.dream-grid {
+grid-template-columns: repeat(2, 1fr);
+}
+
+.glass {
+padding: 28px 22px;
+border-radius: 22px;
+}
+
+.message p,
+.partner p {
+font-size: 15px;
+}
+}
+
+@media (max-width: 430px) {
+
+.dream-grid {
+grid-template-columns: 1fr;
+}
+
+.music-btn {
+width: 46px;
+height: 46px;
+}
+}
+</style>
+</head>
+
+
+<body>
+
+<!-- Background -->
+<div class="stars"></div>
+
+
+<!-- Music button -->
+<button class="music-btn" id="musicButton">🎵</button>
+
+<!--
+OPTIONAL MUSIC
+
+To add music:
+1. Put an MP3 file in the same folder as this HTML file.
+2. Rename it to "birthday.mp3".
+3. Uncomment the audio source below.
+
+Example:
+<audio id="birthdayMusic" loop>
+<source src="birthday.mp3" type="audio/mpeg">
+</audio>
+-->
+
+<audio id="birthdayMusic" loop>
+<!-- <source src="birthday.mp3" type="audio/mpeg"> -->
+</audio>
+
+
+<!-- =====================================================
+HERO
+===================================================== -->
+
+<header class="hero">
+
+<div class="hero-content">
+
+<div class="eyebrow">
+A little birthday surprise
+</div>
+
+<h1>
+Happy 21st,<br>
+Yutika ❤️
+</h1>
+
+<h2>
+To my best friend 🫶🏻
+</h2>
+
+<div class="hero-date">
+27 September · 21 years of you
+</div>
+
+<a href="#message" class="open-btn">
+Open your birthday letter ↓
+</a>
+
+</div>
+
+</header>
+
+
+<!-- =====================================================
+MAIN MESSAGE
+===================================================== -->
+
+<section id="message">
+
+<div class="section-heading">
+
+<span>
+A message from Ved
+</span>
+
+<h2>
+Happy Birthday ❤️
+</h2>
+
+</div>
+
+
+<div class="glass message">
+
+<p class="opening">
+Happy 21st birthday, Yutika! 🥳❤️
+</p>
+
+<p>
+Can’t believe you’re 21 now… officially old enough to make questionable decisions.😅
+</p>
+
+<p>
+somehow we’ve collected way too many moments that would make absolutely no sense to anyone else. And honestly, that’s one of my favorite things about us.
+</p>
+
+<p>
+I’m genuinely grateful to have you as my best friend. You’re one of those people I can be completely stupid with, talk about literally anything with, and still know you’ll be there when it actually matters. Life would definitely be a lot more boring without you in it.
+</p>
+
+<p>
+I hope 21 brings you a lot of happiness, crazy memories, new experiences, and everything you’ve been working toward. Keep being the same annoying, amazing person you are. 😭
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+WHAT I LIKE ABOUT YOU
+===================================================== -->
+
+<section>
+
+<div class="section-heading">
+
+<span>
+The little things
+</span>
+
+<h2>
+What i like in you
+</h2>
+
+</div>
+
+
+<div class="love-grid">
+
+
+<div class="love-card">
+
+<div class="love-number">
+01 🫶🏻
+</div>
+
+<p>
+I love how deeply you care for people, even when your own heart is tired.
+</p>
+
+</div>
+
+
+<div class="love-card">
+
+<div class="love-number">
+02 🤍
+</div>
+
+<p>
+I love that with you, I never have to pretend, filter, or hide my broken pieces.
+</p>
+
+</div>
+
+
+<div class="love-card">
+
+<div class="love-number">
+03 😂
+</div>
+
+<p>
+I love how your laugh is my absolute favorite sound in the whole world.
+</p>
+
+</div>
+
+
+<div class="love-card">
+
+<div class="love-number">
+04 🏠
+</div>
+
+<p>
+I love that even in a room full of noise, your presence feels like home and safety.
+</p>
+
+</div>
+
+
+<div class="love-card">
+
+<div class="love-number">
+05 🌧️
+</div>
+
+<p>
+I love that you never judged my worst days, but instead chose to stay and hold the umbrella while it rained.
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+OUR STORY
+===================================================== -->
+
+<section>
+
+<div class="section-heading">
+
+<span>
+Us
+</span>
+
+<h2>
+Our story 🧿
+</h2>
+
+</div>
+
+
+<div class="glass story">
+
+<p class="story-text">
+We’ve gone through so many different phases, changes, and versions of life together. Through it all, you have remained my absolute favorite constant. Happy birthday, best friend 🫶🏻🧿
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+LIFE PARTNER
+===================================================== -->
+
+<section>
+
+<div class="section-heading">
+
+<span>
+Something from my heart
+</span>
+
+<h2>
+One honest thing ❤️
+</h2>
+
+</div>
+
+
+<div class="glass partner">
+
+<p class="special">
+I know maybe I can’t be the person you spend your life with, but I genuinely hope that whoever does become your life partner loves you more than anyone ever could. ❤️
+</p>
+
+<p>
+You deserve someone who always understands you, takes care of you, makes you happy, and loves you for exactly who you are. I just want to see you happy, no matter who you end up with.🫶🏻
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+DREAM WITH YOU
+===================================================== -->
+
+<section>
+
+<div class="section-heading">
+
+<span>
+Before life changes
+</span>
+
+<h2>
+Dream with you 🌎
+</h2>
+
+</div>
+
+
+<div class="glass">
+
+<p style="
+text-align:center;
+color:#dfd1d8;
+line-height:1.9;
+font-size:17px;
+margin-bottom:35px;
+">
+Before life takes us into different chapters, I just want to tell you about a few dreams I have with you—
+</p>
+
+
+<div class="dream-grid">
+
+
+<div class="dream">
+
+<div class="dream-icon">
+🎂
+</div>
+
+<p>
+celebrating many more birthdays together
+</p>
+
+</div>
+
+
+<div class="dream">
+
+<div class="dream-icon">
+✈️
+</div>
+
+<p>
+travelling the world
+</p>
+
+</div>
+
+
+<div class="dream">
+
+<div class="dream-icon">
+🌎
+</div>
+
+<p>
+having crazy adventures
+</p>
+
+</div>
+
+
+<div class="dream">
+
+<div class="dream-icon">
+🫶🏻
+</div>
+
+<p>
+staying by each other’s side forever
+</p>
+
+</div>
+
+
+</div>
+
+
+<p style="
+text-align:center;
+color:#dfd1d8;
+line-height:1.9;
+font-size:17px;
+margin-top:35px;
+">
+and making countless beautiful memories.🫶🏻🧿
+</p>
+
+</div>
+
+</section>
+
+
+<!-- =====================================================
+FINAL
+===================================================== -->
+
+<section class="final">
+
+<div class="final-content">
+
+<div class="big-heart">
+❤️
+</div>
+
+<h2>
+Happy Birthday,<br>
+Yutika
+</h2>
+
+<p>
+Here’s to 21, to all the memories we already have,
+and to all the ones still waiting for us.
+</p>
+
+<div class="signature">
+— Ved 🫶🏻
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+Made with love for Yutika · 27 September 🎂
+</footer>
+
+
+<script>
+
+/* =====================================================
+FLOATING HEARTS
+===================================================== */
+
+function createHeart() {
+
+const heart = document.createElement("div");
+
+heart.className = "floating-heart";
+
+const hearts = [
+"❤️",
+"🩷",
+"💕",
+"💗",
+"💖",
+"🫶🏻",
+"🧿"
+];
+
+heart.innerHTML =
+hearts[Math.floor(Math.random() * hearts.length)];
+
+heart.style.left =
+Math.random() * 100 + "vw";
+
+heart.style.fontSize =
+(14 + Math.random() * 22) + "px";
+
+heart.style.animationDuration =
+(5 + Math.random() * 6) + "s";
+
+document.body.appendChild(heart);
+
+setTimeout(() => {
+heart.remove();
+}, 12000);
+}
+
+setInterval(createHeart, 900);
+
+
+/* =====================================================
+CONFETTI
+===================================================== */
+
+function createConfetti() {
+
+const confetti = document.createElement("div");
+
+confetti.className = "confetti";
+
+confetti.style.left =
+Math.random() * 100 + "vw";
+
+confetti.style.background =
+`hsl(${Math.random() * 360}, 90%, 70%)`;
+
+confetti.style.animationDuration =
+(2 + Math.random() * 2) + "s";
+
+document.body.appendChild(confetti);
+
+setTimeout(() => {
+confetti.remove();
+}, 4500);
+}
+
+
+/* =====================================================
+BIRTHDAY SURPRISE
+===================================================== */
+
+function birthdaySurprise() {
+
+for (let i = 0; i < 150; i++) {
+
+setTimeout(() => {
+createConfetti();
+}, i * 15);
+
+}
+
+}
+
+
+/* Start confetti when page loads */
+
+window.addEventListener("load", () => {
+
+setTimeout(() => {
+birthdaySurprise();
+}, 1200);
+
+});
+
+
+/* =====================================================
+MUSIC BUTTON
+===================================================== */
+
+const musicButton =
+document.getElementById("musicButton");
+
+const music =
+document.getElementById("birthdayMusic");
+
+let musicPlaying = false;
+
+musicButton.addEventListener("click", () => {
+
+/*
+If you added birthday.mp3 above,
+this button will control it.
+*/
+
+if (!music.src) {
+
+alert(
+"Add your birthday.mp3 file in the same folder as this HTML file to enable music 🎵"
+);
+
+return;
+}
+
+if (musicPlaying) {
+
+music.pause();
+
+musicButton.innerHTML = "🎵";
+
+musicPlaying = false;
+
+} else {
+
+music.play();
+
+musicButton.innerHTML = "🔊";
+
+musicPlaying = true;
+
+}
+
+});
+
+
+/* =====================================================
+SCROLL REVEAL ANIMATION
+===================================================== */
+
+const cards =
+document.querySelectorAll(
+".glass, .love-card, .dream"
+);
+
+const observer =
+new IntersectionObserver(
+entries => {
+
+entries.forEach(entry => {
+
+if (entry.isIntersecting) {
+
+entry.target.style.opacity = "1";
+
+entry.target.style.transform =
+"translateY(0)";
+
+observer.unobserve(
+entry.target
+);
+
+}
+
+});
+
+},
+{
+threshold: 0.15
+}
+);
+
+
+cards.forEach(card => {
+
+card.style.opacity = "0";
+
+card.style.transform =
+"translateY(35px)";
+
+card.style.transition =
+"opacity .8s ease, transform .8s ease";
+
+observer.observe(card);
+
+});
+
+
+/* =====================================================
+CLICK HEART EFFECT
+===================================================== */
+
+document.addEventListener("click", function(e) {
+
+const heart = document.createElement("div");
+
+heart.innerHTML = "❤️";
+
+heart.style.position = "fixed";
+
+heart.style.left = e.clientX + "px";
+heart.style.top = e.clientY + "px";
+
+heart.style.fontSize = "22px";
+
+heart.style.pointerEvents = "none";
+
+heart.style.zIndex = "3000";
+
+heart.style.animation =
+"floatHeart 1.5s ease forwards";
+
+document.body.appendChild(heart);
+
+setTimeout(() => {
+heart.remove();
+}, 1600);
+
+});
+
+</script>
+
+</body>
+</html>
